@@ -38,13 +38,4 @@ The appearance of false edges at high ISO is caused by the interaction between e
 2.  **Quantization Steps:** Digital images represent light in discrete levels (0-255). High-gain noise causes pixel values to jump randomly between these levels.
 3.  **Artificial Gradients:** The Canny detector identifies edges by calculating intensity gradients. The algorithm cannot distinguish between a physical edge and a "digital edge" caused by noise jumping between quantization levels. These artificial gradients exceed the detection threshold, creating the noisy "false edges" observed in the experiment.
 
-## 📸 Screenshots
-*(All screenshots and the video demonstrating the performance of the app are documented in the official report.)*
-
----
-
-### How to Run
-1.  Clone the repository.
-2.  Open in Android Studio Ladybug+.
-3.  Sync Gradle and run on a physical Android device.
-4.  Grant Camera permissions when prompted.
+## 📸 Screenshots and DEMONSTRATION VIDEO OF THE APP IS WELL DOCUMENTED IN THE REPORT SENT TO PROFESSOR ARTHUR
