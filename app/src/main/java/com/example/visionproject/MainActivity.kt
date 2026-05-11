@@ -232,7 +232,7 @@ fun applyCannyPipeline(bitmap: Bitmap, t1: Double, t2: Double): Bitmap {
     Imgproc.cvtColor(rgba, gray, Imgproc.COLOR_RGBA2GRAY)
     
     val blurred = Mat()
-    Imgproc.GaussianBlur(gray, blurred, Size(5.0, 5.0), 0.0)
+    Imgproc.GaussianBlur(gray, blurred, Size(5.0, 5.0), 1.0)
     
     val edges = Mat()
     Imgproc.Canny(blurred, edges, t1, t2)
@@ -286,7 +286,7 @@ fun saveAllPipelineSteps(context: Context, bitmap: Bitmap?, t1: Double, t2: Doub
     Imgproc.cvtColor(rgba, gray, Imgproc.COLOR_RGBA2GRAY)
     
     val blurred = Mat()
-    Imgproc.GaussianBlur(gray, blurred, Size(5.0, 5.0), 0.0)
+    Imgproc.GaussianBlur(gray, blurred, Size(5.0, 5.0), 1.0)
     
     val edges = Mat()
     Imgproc.Canny(blurred, edges, t1, t2)
